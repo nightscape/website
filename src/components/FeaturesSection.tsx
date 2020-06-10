@@ -1,7 +1,7 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import Feature, { FeatureProps } from './Feature'
+import Feature, { FeatureItemProps } from './FeatureItem'
 
 const StyledFeatures = styled.div`
     display: flex;
@@ -17,12 +17,12 @@ const StyledFeatures = styled.div`
     }
 `
 
-const Features = ({ features }: { features: FeatureProps[] }) => (
+const FeaturesSection = ({ features }: { features: FeatureItemProps[] }) => (
     <section>
         <StyledFeatures className="row">
             {
                 features.map(
-                    (feature: FeatureProps, i) => <Feature
+                    (feature: FeatureItemProps, i) => <Feature
                         key={`${i}feature.title`}
                         {...feature}
                     />
@@ -32,4 +32,4 @@ const Features = ({ features }: { features: FeatureProps[] }) => (
     </section>
 )
 
-export default Features
+export default FeaturesSection

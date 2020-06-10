@@ -5,8 +5,8 @@ import Cloud from '../resources/cloud.svg'
 import MoreInfo from '../components/MoreInfo'
 import Banner from '../components/Banner'
 import ActionCard from '../components/ActionCard'
-import { FeatureProps } from '../components/self-hosted/Feature'
-import Features from '../components/self-hosted/Features'
+import { FeatureItemProps } from '../components/FeatureItem'
+import FeaturesSection from '../components/FeaturesSection'
 import Control from '../resources/control.svg'
 import Support from '../resources/support.svg'
 import GithubGitlab from '../resources/github-gitlab.svg'
@@ -14,7 +14,7 @@ import Adminstration from '../resources/administration.svg'
 import Install from '../components/self-hosted/Install'
 import { MoreInfoContents } from '../utils/moreInfoContents'
 
-const features: FeatureProps[] = [
+const features: FeatureItemProps[] = [
     {
         title: 'Full Data Control',
         text: 'All data remains on your infrastructure, as Gitpod can run behind corporate firewalls and on air-gapped networks.',
@@ -55,7 +55,7 @@ const SelfHostedPage: React.SFC<{}> = () => (
 
             {/* ----- Section Features ----- */}
 
-            <Features features={features} />
+            <FeaturesSection features={features} />
 
             {/* ----- Section Install ----- */}
 

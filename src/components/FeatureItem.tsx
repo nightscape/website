@@ -1,9 +1,9 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import { borders, sizes } from '../../styles/variables'
+import { borders, sizes } from '../styles/variables'
 
-const StyledFeature = styled.div`
+const StyledFeatureItem = styled.div`
     display: flex;
     align-items: center;
     flex: 0 0 45%;
@@ -40,20 +40,21 @@ const StyledFeature = styled.div`
     }
 `
 
-export interface FeatureProps {
+export interface FeatureItemProps {
     title: string
     text: string
     img: string
+    alt?: string
 }
 
-const Feature = ({ title, text, img }: FeatureProps) => (
-    <StyledFeature>
-        <img src={img} alt={title}/>
+const FeatureItem = ({ title, text, img, alt }: FeatureItemProps) => (
+    <StyledFeatureItem>
+        <img src={img} alt={alt ? alt : title}/>
         <div>
             <h3>{title}</h3>
             <p>{text}</p>
         </div>
-    </StyledFeature>
+    </StyledFeatureItem>
 )
 
-export default Feature
+export default FeatureItem

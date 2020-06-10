@@ -21,8 +21,8 @@ const StyledActionCard = styled.section`
         margin: -3rem 0 4rem;
     }
 
-    .btn {
-        margin-right: 2rem;
+    .btn-wrapper {
+        justify-content: center;
     }
 `
 
