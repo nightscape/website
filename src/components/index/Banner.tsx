@@ -44,6 +44,10 @@ const Styled = styled.div`
 
         .btn-wrapper {
             margin-bottom: 3rem;
+
+            @media(max-width: ${sizes.breakpoints.lg}) {
+                justify-content: center;
+            }
         }
 
         &__screenshot {
