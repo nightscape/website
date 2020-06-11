@@ -145,7 +145,7 @@ const PricingContainer = styled.div`
 
         &--1 {
             top: 31px;
-            left: 20%;
+            left: 21%;
 
             @media(max-width: 1100px) {
                 left: 19.5%;
