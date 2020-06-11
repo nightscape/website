@@ -6,7 +6,7 @@ import { colors, sizes } from '../styles/variables'
 const StyledExternalLink = styled.a`
 
     svg {
-        height: 1.5rem;
+        height: 1.4rem;
         transform: translate(.6rem, .3rem);
         transition: all .2s;
         opacity: 0;
