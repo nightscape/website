@@ -8,6 +8,10 @@ const Styled = styled.div`
     .start {
         text-align: center;
 
+        @media(min-width: 1141px) {
+            padding-top: 0;
+        }
+
         h3 {
             font-weight: 400;
             margin: 3rem 0;
