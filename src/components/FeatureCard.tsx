@@ -21,21 +21,21 @@ const Styled = styled.div<{ direction?: string, flexDirectionColumnForImgContain
         margin-bottom: 14rem;
     }
     
-    @media(min-width: 881px) {
+    @media(min-width: 1141px) {
         margin: 18rem auto;
     }
 
-    @media(max-width: 880px) {
+    @media(max-width: 1140px) {
         flex-direction: column;
-        max-width: 700px;
+        max-width: 740px;
     }
 
     &:nth-of-type(2n) {
-        @media(min-width: 880px) {
+        @media(min-width: 1140px) {
             flex-direction: row-reverse;
         }
 
-        @media(min-width: 881px) {
+        @media(min-width: 1141px) {
             .why-gitpod__img-container {
                 padding-left: 8rem;
                 &::before {
@@ -55,7 +55,7 @@ const Styled = styled.div<{ direction?: string, flexDirectionColumnForImgContain
         justify-content: center;
         min-width: 28rem;
 
-        @media(min-width:  881px) {
+        @media(min-width:  1141px) {
             flex: 0 0 38%;
         }
 
@@ -76,7 +76,7 @@ const Styled = styled.div<{ direction?: string, flexDirectionColumnForImgContain
         width: 100%;
         max-height: 440px;
 
-        @media(max-width: 880px) {
+        @media(max-width: 1140px) {
             max-height: 400px;
         }
 
@@ -112,7 +112,7 @@ const Styled = styled.div<{ direction?: string, flexDirectionColumnForImgContain
             opacity: .1;
         }
 
-        @media(min-width: 881px) {
+        @media(min-width: 1141px) {
             padding-right: ${({ direction }) => (direction === 'right') ? '8rem' : ''};
             padding-left: ${({ direction }) => !(direction === 'right') ? '8rem' : ''};
             min-height: 520px;
@@ -126,7 +126,7 @@ const Styled = styled.div<{ direction?: string, flexDirectionColumnForImgContain
             }
         }
 
-        @media(max-width: 880px) {
+        @media(max-width: 1140px) {
             min-height: 240px;
             padding: 5rem;
             margin-bottom: 2.5rem;
@@ -159,13 +159,13 @@ const Styled = styled.div<{ direction?: string, flexDirectionColumnForImgContain
     }
 
     .in-view::before {
-       @media(min-width: 881px) {
+       @media(min-width: 1141px) {
             animation: ${({ direction }) => direction === 'right' ? 'slideInLeft' : 'slideInRight'} 0.6s cubic-bezier(0.16, 1, 0.3, 1) 1 normal forwards;
        }
     }
 
     .buttons {
-        margin-top: 6rem;
+        margin-top: 4rem;
     }
 
     ul {
