@@ -4,11 +4,12 @@ import styled from '@emotion/styled'
 import IndexLayout from '../layouts'
 import DoubleArrows from '../resources/double-arrows.png'
 import { colors, sizes, shadows } from '../styles/variables'
-import Kiel from '../resources/kiel.png'
-import Team from '../resources/team.png'
+import Kiel from '../resources/kiel.jpg'
+import Team from '../resources/team.jpg'
 import Fox from '../resources/fox.png'
 import TypeFox from '../resources/typefox.png'
 import Details from '../components/Details'
+import { Link } from 'gatsby'
 
 const StyledAboutPage = styled.div`
     /* ------------------------------------------- */
@@ -127,10 +128,16 @@ const StyledAboutPage = styled.div`
 
     .about {
 
+        h2 {
+            @media(max-width: 910px) {
+                text-align: center;
+            }
+        }
+
         &__container {
             display: flex;
 
-            @media(max-width: ${sizes.breakpoints.md}) {
+            @media(max-width: 910px) {
                 flex-direction: column;
                 align-items: center;
             }
@@ -142,7 +149,7 @@ const StyledAboutPage = styled.div`
             min-width: 40rem;
             box-shadow: ${shadows.light};
 
-            @media(max-width: ${sizes.breakpoints.md}) {
+            @media(max-width: 910px) {
                 &:not(:last-child) {
                     margin-bottom: 3rem;
                 }
@@ -232,7 +239,7 @@ const AboutPage: React.SFC<{}> = () => (
                             <div className="about__box">
                                 <img alt="TypeFox Team" src={Team} />
                                 <h3>About the Team</h3>
-                                <p>We're a small tech-driven team with collectively over 50 years of experience in language design, IDEs, and tool development and with strong values around openness, honesty, and effective pragmatism. If you're interested in joining us, please have a look at our <a href="https://www.typefox.io/careers/" target="_blank" rel="noopener">Job Openings</a>.</p>
+                                <p>We're a small tech-driven team with collectively over 50 years of experience in language design, IDEs and tool development and with strong values around openness, honesty, and effective pragmatism. If you're interested in joining us, please have a look at our <Link to="/careers">Job Openings</Link>.</p>
                             </div>
                         </div>
                     </section>

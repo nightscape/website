@@ -1,7 +1,7 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import Feature, { FeatureItemProps } from './FeatureItem'
+import FeatureItem, { FeatureItemProps } from './FeatureItem'
 
 const StyledFeatures = styled.div`
     display: flex;
@@ -22,7 +22,7 @@ const FeaturesSection = ({ features }: { features: FeatureItemProps[] }) => (
         <StyledFeatures className="row">
             {
                 features.map(
-                    (feature: FeatureItemProps, i) => <Feature
+                    (feature: FeatureItemProps, i) => <FeatureItem
                         key={`${i}feature.title`}
                         {...feature}
                     />

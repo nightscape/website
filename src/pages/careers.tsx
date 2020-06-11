@@ -65,7 +65,6 @@ const StyledCareersPage = styled.div`
 
     .jobs {
         h2 {
-            margin-bottom: 6rem;
             text-align: center;
         }
 
@@ -103,7 +102,7 @@ const features: FeatureItemProps[] = [
         alt: 'Wifi'
     },
     {
-        title: "Flat Hierarchy",
+        title: "Worthy Mission",
         text: "Together we want to make developers life easier by providing the best software tools.",
         img: Mission,
         alt: 'Two Mountains: One with a flag on it.'
