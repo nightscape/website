@@ -81,7 +81,12 @@ const StyledFooter = styled.footer`
     .contact {
         li:not(:first-child) {
             display: inline-block;
-            margin-right: 2rem;
+            margin-left: 2rem;
+            transform: translateX(-2rem);
+
+            @media(max-width: 650px) {
+                transform: translateX(-1rem);
+            }
         }
     }
 
