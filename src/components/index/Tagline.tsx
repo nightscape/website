@@ -9,6 +9,11 @@ const Styled = styled.section`
     align-items: center;
     max-width: 900px;
     margin: 0 auto;
+    
+    @media(min-width: 1140px) {
+        padding-bottom: 0;
+        margin-bottom: -5rem;
+    }
 
     @media(max-width: ${sizes.breakpoints.md}) {
         flex-direction: column;
