@@ -25,6 +25,10 @@ const StyledFeatureItem = styled.div`
         }
     }
 
+    p {
+        max-width: 320px;
+    }
+
     img {
         max-width: 10rem;
         max-height: 12rem;
