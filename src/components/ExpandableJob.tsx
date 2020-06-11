@@ -41,12 +41,12 @@ const StyledExpandableJob = styled.div`
         margin-top: 2rem;
     }
 
-    .after, .mail {
-        margin-top: 5rem;
+    .after {
+        margin: 5rem 0;
     }
 
-    .mail {
-        font-size: 1.8rem;
+    .btn {
+        margin-bottom: 5rem;
     }
 
     h4 {
@@ -103,7 +103,13 @@ const ExpandableJob = ({ title, intro, paragraphs, lists, textAfterTheLists, ren
                 {paragraphs}
                 { lists.map((item, i) => <List key={i + item.title} {...item} />) }
                 <p className="after">{textAfterTheLists}</p>
-                <p className="mail">Interested? <a href={`mailto:contact@typefox.io?subject=Application as ${title}`} target="_blank">Send us a mail!</a></p>
+                <a 
+                    href={`mailto:contact@typefox.io?subject=Application as ${title}`}
+                    target="_blank"
+                    className="btn btn--cta"
+                >
+                    Apply Now
+                </a>
             </>) : null}
             
         </StyledExpandableJob>
