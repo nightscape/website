@@ -114,7 +114,8 @@ const PricingContainer = styled.div`
     background-color: ${colors.white};
     border-top: 1px solid ${colors.offWhite2};
     padding: 3rem 0 6rem;
-    
+    min-height: 660px;
+
     .cards {
         position: relative;
         padding: 0rem 0 3rem;
@@ -200,7 +201,7 @@ const PricingBoxes = ({ isRendered, changeIsRendered }: PricingBoxesProps) => {
                     />
                 </div>
             </div>
-            <PricingContainer className="">
+            <PricingContainer>
                 <div className="cards row">
                     <div
                         className={`pricing__boxes ${isRendered ? 'hide' : 'show'}`}
