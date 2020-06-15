@@ -2,7 +2,7 @@ import React from 'react'
 
 import IndexLayout from '../layouts'
 import styled from '@emotion/styled'
-import { colors, sizes } from '../styles/variables'
+import { sizes } from '../styles/variables'
 import { graphql } from 'gatsby'
 import PostPreview from '../components/PostPreview'
 // import NewsletterForm from '../components/NewsletterForm'
@@ -16,23 +16,17 @@ const StyledBlogPage = styled.div`
         margin-bottom: 3rem;
     }
 
-    .post {
-        margin-bottom: 10rem;
-
-        @media(max-width: ${sizes.breakpoints.md}) {
-            padding: 3rem 0;
-        }
-
-        @media(max-width: ${sizes.breakpoints.sm}) {
-            padding: 1rem 0;
-        }
+    .pattern {
+        padding: 10rem 0 5rem;
+        text-align: center;
     }
 
-    .page-subtitle {
-        margin-top: 5rem;
-        color: ${colors.textLight};
-        font-weight: 400;
-        margin-bottom: 0;
+    .post {
+        padding: 7rem 0;
+
+        @media(max-width: ${sizes.breakpoints.md}) {
+            padding: 5rem 0;
+        }
     }
 
     .posts {
@@ -117,10 +111,15 @@ const BlogPage: React.SFC<BlogPageProps> = (props) => {
 
                 {/* ----- Section Posts ----- */}
 
-                <section className="post pattern">
+                <div className="pattern" aria-hidden="true">
                     <div className="row">
-                        <h3 className="page-subtitle">Blog Posts</h3>
                         <h1>Discover Articles and Tutorials about Gitpod</h1>
+                    </div>
+                </div>
+                
+                <section className="post">
+                    <div className="row">
+                        <h1 className="visually-hidden">Discover Articles and Tutorials about Gitpod</h1>
                         <div className="posts">
                             {posts.map(
                                 post => <PostPreview
