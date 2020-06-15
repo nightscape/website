@@ -6,19 +6,21 @@ import Pattern from '../resources/pattern-2.jpg'
 import IconTick from '../resources/icon-tick.svg'
 
 const Styled = styled.div<{ direction?: string, flexDirectionColumnForImgContainer?: boolean }>`
-    h2 + p {
-        margin: 0;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+            
+    &:not(:last-child) {
+        margin-bottom: 14rem;
     }
 
     @media(max-width: ${sizes.breakpoints.sm}) {
         text-align: center;
     }
 
-    display: flex;
-    justify-content: space-between;
-            
-    &:not(:last-child) {
-        margin-bottom: 14rem;
+    [id] {
+        position: absolute;
+        top: -25vh;
     }
     
     @media(min-width: 1141px) {
@@ -28,6 +30,10 @@ const Styled = styled.div<{ direction?: string, flexDirectionColumnForImgContain
     @media(max-width: 1140px) {
         flex-direction: column;
         max-width: 740px;
+    }
+
+    h2 + p {
+        margin: 0;
     }
 
     &:nth-of-type(2n) {
@@ -110,6 +116,7 @@ const Styled = styled.div<{ direction?: string, flexDirectionColumnForImgContain
             background-repeat: repeat;
             z-index: -1;
             opacity: .1;
+            border-radius: 3px;
         }
 
         @media(min-width: 1141px) {
@@ -245,7 +252,7 @@ const FeatureCard = ({ src, alt, Graphic, title, text, direction, id, featuresLi
     })
 
     return (
-        <Styled className="row" direction={direction} id={id} flexDirectionColumnForImgContainer={featuresList && featuresList.length ? true : false}>
+        <Styled className="row" direction={direction} flexDirectionColumnForImgContainer={featuresList && featuresList.length ? true : false}>
             <div
                 className={imageContainerClassList}
                 ref={imageContainerRef}
@@ -271,6 +278,9 @@ const FeatureCard = ({ src, alt, Graphic, title, text, direction, id, featuresLi
                     setRenderedGraphic={setRenderedGraphic}
                 /> : null}
             </div>
+            {
+                id && <div id={id}></div>
+            }
         </Styled>
     )
 }
