@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import styled from '@emotion/styled';
-import { colors } from '../styles/variables';
-import MagGlass from '../resources/mag-glass.svg';
+import { colors } from '../../styles/variables';
+import MagGlass from '../../resources/mag-glass.svg';
 
 const StyledInput = styled.input`
     padding: 7px 18px 7px 38px;

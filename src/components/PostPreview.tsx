@@ -2,12 +2,12 @@ import React from 'react'
 
 import styled from '@emotion/styled'
 import { Link } from 'gatsby'
-import { colors, shadows } from '../styles/variables'
+import { colors, borders } from '../styles/variables'
 import { parseAuthors } from '../utils/authors'
 
 const StyledPostPreview = styled.div`
     background: ${colors.white};
-    box-shadow: ${shadows.light};
+    border: ${borders.light2};
     max-width: 35rem;
     min-height: 60rem;
     margin-bottom: 5rem;

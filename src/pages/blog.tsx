@@ -8,7 +8,6 @@ import PostPreview from '../components/PostPreview'
 // import NewsletterForm from '../components/NewsletterForm'
 
 const StyledBlogPage = styled.div`
-
     /* ------------------------------------------- */
     /* ----- Section Posts ----- */
     /* ------------------------------------------- */
@@ -18,6 +17,8 @@ const StyledBlogPage = styled.div`
     }
 
     .post {
+        margin-bottom: 10rem;
+
         @media(max-width: ${sizes.breakpoints.md}) {
             padding: 3rem 0;
         }
@@ -111,12 +112,12 @@ const BlogPage: React.SFC<BlogPageProps> = (props) => {
         Date.parse(b.node.frontmatter.date) - Date.parse(a.node.frontmatter.date));
 
     return (
-        <IndexLayout canonical="/blog/" title="Blog" description="Discover articles and tutorials about Gitpod." navShouldBeGrey={true}>
+        <IndexLayout canonical="/blog/" title="Blog" description="Discover articles and tutorials about Gitpod.">
             <StyledBlogPage>
 
                 {/* ----- Section Posts ----- */}
 
-                <section className="post grey-container">
+                <section className="post pattern">
                     <div className="row">
                         <h3 className="page-subtitle">Blog Posts</h3>
                         <h1>Discover Articles and Tutorials about Gitpod</h1>
