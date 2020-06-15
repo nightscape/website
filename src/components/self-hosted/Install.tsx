@@ -57,6 +57,7 @@ const StyledSection = styled.section`
             padding: 3rem 2rem;
             background: ${colors.white};
             border: ${borders.light};
+            border-radius: 3px;
 
             @media(max-width: ${sizes.breakpoints.lg}) {
                 margin: 5rem 0 0;

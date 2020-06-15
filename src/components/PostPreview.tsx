@@ -8,6 +8,7 @@ import { parseAuthors } from '../utils/authors'
 const StyledPostPreview = styled.div`
     background: ${colors.white};
     border: ${borders.light2};
+    border-radius: 3px;
     max-width: 35rem;
     min-height: 60rem;
     margin-bottom: 5rem;
@@ -21,6 +22,8 @@ const StyledPostPreview = styled.div`
         background-position-x: 50%;
         background-position-y: 50%;
         background-size: cover;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
     }
 
     p {

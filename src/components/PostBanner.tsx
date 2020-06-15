@@ -9,6 +9,8 @@ const StyledPostBanner = styled.header`
     background-size: cover;
     background-position: center;
     overflow-x: hidden;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
 
     .contents {
         position: absolute;

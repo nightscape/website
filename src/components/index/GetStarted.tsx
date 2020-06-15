@@ -42,6 +42,7 @@ const StyledGetStarted = styled.div`
                     align-items: center;
                     background: ${colors.offWhite};
                     border: ${borders.light2};
+                    border-radius: 3px;
 
                     @media(min-width: ${sizes.breakpoints.lg}) {
                         width: 35%;

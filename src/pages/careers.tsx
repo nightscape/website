@@ -47,6 +47,7 @@ const StyledCareersPage = styled.div`
 
         img {
             max-width: 100%;
+            border-radius: 3px;
 
             @media(max-width: 1040px) {
                 margin-bottom: 4rem;

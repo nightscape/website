@@ -20,6 +20,7 @@ const Styled = styled.section`
         padding: 12rem 6rem 6rem;
         background: ${colors.white};
         border: ${borders.light};
+        border-radius: 3px;
     }
 `
 

@@ -12,6 +12,7 @@ const StyledTextBox = styled.div`
         padding: 8rem 5rem;
         background: ${colors.white};
         box-shadow: ${shadows.light};
+        border-radius: 3px;
     }
 
     h1 {

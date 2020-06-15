@@ -12,6 +12,8 @@ const Styled = styled.label`
     flex-direction: column;
     flex: 1;
     background: #252629;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
 
     .header {
         display: flex;
@@ -118,7 +120,6 @@ const Styled = styled.label`
             border: 2px solid #3f638b;
             border-top-left-radius: 10rem;
             border-bottom-left-radius: 10rem;
-            border-right: none;
 
             @media(max-width: 640px) {
                 margin-left: 1rem;
@@ -199,6 +200,7 @@ const Styled = styled.label`
     .info {
         height: 14rem;
         background: #292c31;
+        border-bottom-right-radius: 3px;
     }
 `
 

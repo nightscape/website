@@ -16,7 +16,6 @@ const StyledAboutPage = styled.div`
     /* ----- Banner ----- */
     /* ------------------------------------------- */
 
-
     .banner {
         display: flex;
         padding: 16rem 0;
@@ -148,6 +147,7 @@ const StyledAboutPage = styled.div`
             width: 50%;
             min-width: 40rem;
             box-shadow: ${shadows.light};
+            border-radius: 3px;
 
             @media(max-width: 910px) {
                 &:not(:last-child) {
@@ -163,6 +163,7 @@ const StyledAboutPage = styled.div`
                 display: block;
                 width: 100%;
                 margin-bottom: 3rem;
+                border-radius: 3px;
             }
 
             &:last-of-type {

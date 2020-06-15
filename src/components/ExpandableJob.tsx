@@ -8,6 +8,7 @@ const StyledExpandableJob = styled.div`
     padding: 4rem 4rem 4rem 10rem;
     background: ${colors.offWhite};
     border: ${borders.light2};
+    border-radius: 3px;
 
     @media(max-width: 600px) {
         padding: 4rem 2rem 2rem 8rem;

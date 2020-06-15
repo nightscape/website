@@ -26,6 +26,7 @@ const StyledMediaKitPage = styled.div`
         max-width: 30rem;
         margin-bottom: 3rem;
         border: ${borders.light2};
+        border-radius: 3px;
 
         @media(max-width: ${sizes.breakpoints.sm}) {
             min-width: 24rem;
@@ -45,6 +46,8 @@ const StyledMediaKitPage = styled.div`
 
         &__img {
             height: 5.5rem;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
 
             &-container {
                 display: flex;

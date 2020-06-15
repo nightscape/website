@@ -188,6 +188,8 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
         bottom: 100%;
         width: 100%;
         background: ${colors.offWhite2};
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
 
         p {
             width: 20ch;

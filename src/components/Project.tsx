@@ -10,6 +10,7 @@ const StyledProject = styled.div`
     font-weight: 600;
     border: ${borders.light2};
     background: ${colors.offWhite};
+    border-radius: 3px;
 
     @media(max-width: ${sizes.breakpoints.lg}) {
         max-width: 24rem;

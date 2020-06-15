@@ -1,5 +1,5 @@
-
 import React from 'react'
+
 import IndexLayout from '../layouts'
 import TextBox from '../components/TextBox'
 

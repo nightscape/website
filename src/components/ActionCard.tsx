@@ -12,6 +12,7 @@ const StyledActionCard = styled.section`
     text-align: center;
     background: ${colors.offWhite};
     border: ${borders.light2};
+    border-radius: 3px;
 
     h2 {
         font-size: 2.8rem;

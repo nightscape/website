@@ -49,6 +49,8 @@ const StyledBlogTemplate = styled.div`
     box-shadow: ${shadows.light};
     background-color: ${colors.white};
     overflow: hidden;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
 
     .contents {
         padding: 5rem 3rem;
