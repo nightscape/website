@@ -28,7 +28,7 @@ import AmazonLogo from '../resources/amazon.svg'
 import IntelLogo from '../resources/intel.svg'
 
 import { features } from '../utils/index'
-import Tagline from '../components/index/Tagline'
+import ProductivityWithGitpod from '../components/index/ProductivityWithGitpod'
 
 const IndexPage: React.SFC<{}> = () => (
     <IndexLayout canonical='/'>
@@ -141,7 +141,7 @@ const IndexPage: React.SFC<{}> = () => (
             ]}
         />
 
-        <Tagline />
+        <ProductivityWithGitpod />
 
         <FeatureCards 
             features={features}
