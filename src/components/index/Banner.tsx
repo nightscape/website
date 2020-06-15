@@ -102,7 +102,7 @@ const Banner = () => (
                             Are You <br />Ready-To-Code?
                             <span>Start Instantly. Anywhere.</span>
                         </h1>
-                        <p>Gitpod launches automated dev environments for your <strong>GitHub, GitLab or Bitbucket</strong> project with a single click.</p>
+                        <p>Gitpod launches automated dev environments for your <strong>GitHub, GitLab or Bitbucket</strong> projects with a single click.</p>
                         <div className="btn-wrapper">
                             <a href="https://gitpod.io/#https://github.com/gitpod-io/spring-petclinic" className="btn btn--cta">Try Now</a>
                         </div>
