@@ -6,7 +6,7 @@ import { MENU } from '../../docs/menu'
 import { Docsearch } from './DocSearch'
 import styled from '@emotion/styled'
 import { sizes } from '../../styles/variables'
-import Pattern from '../../resources/pattern.png'
+import SideBarBg from '../../resources/sidebar-bg.jpg'
 
 
 const StyledSideBar = styled.div`
@@ -19,13 +19,26 @@ const StyledSideBar = styled.div`
         position: absolute;
         content: "";
         display: block;
-        background: url(${Pattern});
+        min-height: 800px;
+        min-width: 500px;
+        height: calc(100vh + 100%);
+        width: calc(100% + 10vw);
+        transform: translateX(-10vw) translateY(-100vh);
+        background: url(${SideBarBg});
         background-size: cover;
         background-position: center;
-        height: calc(100vh + 100%);
-        width: calc(55vw + 100%);
-        transform: translateX(-55vw) translateY(-100vh);
         z-index: -1;
+        opacity: .1;
+
+        @media(min-width: 1380px) {
+            width: calc(30vw + 100%);
+            transform: translateX(-30vw) translateY(-100vh);
+        }
+
+        @media(min-width: 1480px) {
+            width: calc(55vw + 100%);
+            transform: translateX(-55vw) translateY(-100vh);
+        }
     }
 
     @media(min-width: ${sizes.breakpoints.lg}) {
