@@ -6,10 +6,11 @@ import { colors, borders } from '../../styles/variables'
 
 const StyledReachOut = styled.section`
     border: ${borders.light2};
-    padding: 0 0 5rem;
+    padding: 0 2rem 5rem;
     max-width: 450px;
     margin: 0 auto 10rem;
     text-align: center;
+    border-radius: 3px;
 
     h3 {
         margin-top: 0;
