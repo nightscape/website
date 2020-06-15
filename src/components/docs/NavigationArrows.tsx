@@ -11,8 +11,9 @@ const StyledNavigationArrows = styled.div`
     padding: 10rem 0;
         
     svg {
-        height: 2rem;
-        stroke: #6E6E6E;
+        height: 5.5rem;
+        width: 5rem;
+        fill: #6E6E6E;
         transition: all .2s;
     }
 
@@ -20,7 +21,7 @@ const StyledNavigationArrows = styled.div`
         &:hover,
         &:focus {
             svg {
-                stroke: ${colors.lightBlue};
+                fill: ${colors.lightBlue};
             }
         }
     }
@@ -31,16 +32,12 @@ const StyledNavigationArrows = styled.div`
     }
 
     .prev {
-        transform: rotate(90deg);
+        transform: rotate(-180deg);
         margin-right: 4rem;
-    }
-
-    .next {
-        transform: rotate(-90deg);
     }
 `
 
-const NavigationArrows = ({menuCtx}: {menuCtx: MenuContext}) => (
+const NavigationArrows = ({ menuCtx }: { menuCtx: MenuContext }) => (
     <StyledNavigationArrows>
         {menuCtx.prev ?
             <Link
@@ -48,23 +45,17 @@ const NavigationArrows = ({menuCtx}: {menuCtx: MenuContext}) => (
                 title={`Prev: ${menuCtx.prev.title}`}
             >
                 <svg
-                    className="prev"
                     xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 16 8"
+                    width="33.635"
+                    height="33.635"
+                    viewBox="0 0 33.635 33.635"
+                    className="prev"
                 >
-                    <g clip-path="url(#clip0)">
-                        <path
-                            strokeLinecap="round"
-                            strokeWidth="1.5"
-                            d="M14.72 1.052L7.878 6.278 1.05 1.052"
-                        ></path>
-                    </g>
-                    <defs>
-                        <clipPath id="clip0">
-                            <path fill="#fff" d="M0 0H15.772V7.221H0z"></path>
-                        </clipPath>
-                    </defs>
+                    <path
+                        d="M-1075.548-827.365a16.708 16.708 0 01-11.892-4.926 16.708 16.708 0 01-4.926-11.892 16.708 16.708 0 014.926-11.892 16.708 16.708 0 0111.892-4.925 16.708 16.708 0 0111.892 4.926 16.708 16.708 0 014.926 11.892 16.708 16.708 0 01-4.926 11.892 16.708 16.708 0 01-11.892 4.925zM-1079.73-853a1 1 0 00-.7.282.992.992 0 00-.3.7.994.994 0 00.282.712l6.881 7.1-6.881 7.084a.993.993 0 00-.283.711 1 1 0 00.3.7 1 1 0 00.7.284 1.007 1.007 0 00.717-.3l8.233-8.476-8.232-8.5a.992.992 0 00-.717-.297z"
+                        data-name="Ausschluss 26"
+                        transform="translate(1092.365 861)"
+                    ></path>
                 </svg>
             </Link> : <div />}
         {menuCtx.next ?
@@ -73,23 +64,17 @@ const NavigationArrows = ({menuCtx}: {menuCtx: MenuContext}) => (
                 title={`Next: ${menuCtx.next.title}`}
             >
                 <svg
-                    className="next"
                     xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 16 8"
+                    width="33.635"
+                    height="33.635"
+                    viewBox="0 0 33.635 33.635"
+                    className="next"
                 >
-                    <g clip-path="url(#clip0)">
-                        <path
-                            strokeLinecap="round"
-                            strokeWidth="1.5"
-                            d="M14.72 1.052L7.878 6.278 1.05 1.052"
-                        ></path>
-                    </g>
-                    <defs>
-                        <clipPath id="clip0">
-                            <path fill="#fff" d="M0 0H15.772V7.221H0z"></path>
-                        </clipPath>
-                    </defs>
+                    <path
+                        d="M-1075.548-827.365a16.708 16.708 0 01-11.892-4.926 16.708 16.708 0 01-4.926-11.892 16.708 16.708 0 014.926-11.892 16.708 16.708 0 0111.892-4.925 16.708 16.708 0 0111.892 4.926 16.708 16.708 0 014.926 11.892 16.708 16.708 0 01-4.926 11.892 16.708 16.708 0 01-11.892 4.925zM-1079.73-853a1 1 0 00-.7.282.992.992 0 00-.3.7.994.994 0 00.282.712l6.881 7.1-6.881 7.084a.993.993 0 00-.283.711 1 1 0 00.3.7 1 1 0 00.7.284 1.007 1.007 0 00.717-.3l8.233-8.476-8.232-8.5a.992.992 0 00-.717-.297z"
+                        data-name="Ausschluss 26"
+                        transform="translate(1092.365 861)"
+                    ></path>
                 </svg>
             </Link> : <div />}
     </StyledNavigationArrows>
